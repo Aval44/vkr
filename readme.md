@@ -32,7 +32,7 @@ screen -S processing
 # в новом окне
 ./Endless_processing.sh | tee -a proc.out
 ```
-+ Для визуализации полученных данных следует открыть **Heatmaps\_and\_barplots.ipynb** и следовать указаниям там.  
++ Для визуализации полученных данных следует открыть **Heatmaps\_and\_barplots.ipynb** и следовать указаниям.  
 
 ---
 ### Cкрипты:  
