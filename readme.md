@@ -22,15 +22,15 @@
 + Проверьте, что все скрипты в _/Scripts_ исполняемы (при необходимости, измените права доступа)
 + Запустите скрипт **Endless\_1\_start.sh**:  
 ```
-screen -S calculating\_affinity
+screen -S calculating_affinity
 # в новом окне
-./Endless\_1\_start.sh | tee -a affcalc.out
+./Endless_1_start.sh | tee -a affcalc.out
 ```
 + Далее (можно параллельно) запустите **Endless\_processing.sh**:  
 ```
 screen -S processing
 # в новом окне
-./Endless\_processing.sh | tee -a proc.out
+./Endless_processing.sh | tee -a proc.out
 ```
 + Для визуализации полученных данных следует открыть **Heatmaps\_and\_barplots.ipynb** и следовать указаниям там.  
 
