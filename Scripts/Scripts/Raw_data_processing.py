@@ -124,7 +124,7 @@ for I in range(len(VirDF_I)):
     VirDF_I['low normed on protein'][I]= VirDF_I['sum_score low'][I]/Dict[VirDF_I['Protein'][I]][1]
 
 ###===Saving MHC_I data===###
-VirDF_I.to_csv("../Data/Affinity_results/Processed_3/"+VirName+"_I.csv", index= True)
+VirDF_I.to_csv("../Data/Affinity_results/Processed/"+VirName+"_I.csv", index= True)
 
 Proteins= Proteins[:-1]
 
@@ -217,10 +217,10 @@ for I in range(len(VirDF_II)):
     VirDF_II['low normed on protein'][I]= VirDF_II['sum_score low'][I]/Dict[VirDF_II['Protein'][I]][1]
 
 ###===Saving MHC_II data===###
-VirDF_II.to_csv("../Data/Affinity_results/Processed_3/"+VirName+"_II.csv", index= True)
+VirDF_II.to_csv("../Data/Affinity_results/Processed/"+VirName+"_II.csv", index= True)
 
 ###===Write to file with human-like peptides===###
-f= open( "../Data/Affinity_results/Processed_3/human-like_peptides.txt", "a")
+f= open( "../Data/Affinity_results/Processed/human-like_peptides.txt", "a")
 f.write(VHLPP)
 f.close()
 
